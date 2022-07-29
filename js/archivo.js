@@ -11,7 +11,7 @@ class Producto{
         this.precio = this.precio* 0.8;
     }
 }
-
+//ingreso los productos en un array
 const productos = []
 productos.push(new Producto(' te verde', '24500', 1));
 productos.push(new Producto('te forma', '14800', 2));
@@ -21,7 +21,7 @@ productos.push(new Producto('clorofila', '20850', 5));
 productos.push(new Producto('esencia ansioff', ' 15250', 6));
 productos.push(new Producto(' te meishen', '29000', 7));
 productos.push(new Producto('levadura', '40000', 8));
-
+//  reccorro el array para realizar descuento a los productos
 for(const producto of productos ){
     producto.descuento();
 }
@@ -32,7 +32,7 @@ let pasar = parseInt(prompt('ingrese el id de tu producto y si no desea alguno d
 function mostrar(senal){
     alert(senal)
 }
-
+// realizo un ciclo para peguntar  por el producto y su precio
 while(pasar != 'no comprar'){
 if(pasar === 1){
     productos.find((el) => {
